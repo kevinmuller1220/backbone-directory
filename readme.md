@@ -27,43 +27,43 @@ Among the great feedback I received, a number of you mentioned you wanted a self
 I initially published the application with two implementations of a RESTful back end: A Java version using Jersey, and a PHP version using Slim. A year later, I’m adding the long overdue Node.js/MongoDB back end.
 
 <table>
-<tbody><tr style="font-weight:bold;">
-<td style="width: 200px">Adapter</td>
-<td>Description</td>
-<td style="width: 200px">Back end Repo</td>
-</tr>
-<tr>
-<td style="width:140px">model-in-memory.js</td>
-<td>In-memory data store</td>
-<td style="width:170px">No server required</td>
-</tr>
-<tr>
-<td>model-rest-json.js</td>
-<td>Backbone.js default behavior. The application gets data through RESTFul services.</td>
-<td><a href="https://github.com/kevinmuller1220/directory-rest-nodejs">directory-server-nodejs</a><br><br>
-<a href="https://github.com/kevinmuller1220/directory-rest-php">directory-server-php</a><br><br>
-directory-server-java
-</td>
-</tr>
-<tr>
-<td>model-rest-jsonp.js</td>
-<td>If the server serving your pages and the server serving your data are on different domains, use this adapter instead to avoid the same origin policy error.</td>
-<td><a href="https://github.com/kevinmuller1220/directory-rest-nodejs">directory-server-nodejs</a><br><br>
-<a href="https://github.com/kevinmuller1220/directory-rest-php">directory-server-php</a><br><br>
-directory-server-java
-</td>
-</tr>
-<tr>
-<td>model-websql.js</td>
-<td>Uses local database using the WebSQL api.</td>
-<td>No server required</td>
-</tr>
-<tr>
-<td>model-parse-dot-com.js</td>
-<td>Don’t want to host your own data infrastructure? Parse.com is a cloud service that will host your data for you. Use this adapter to test your app with  sample data I deployed on Parse.com.</td>
-<td>No server required</td>
-</tr>
-</tbody></table>
+	<tr style="font-weight:bold;">
+		<td style="width: 200px">Adapter</td>
+		<td>Description</td>
+		<td style="width: 200px">Back end Repo</td>
+	</tr>
+	<tr>
+		<td style="width:140px">model-in-memory.js</td>
+		<td>In-memory data store</td>
+		<td style="width:170px">No server required</td>
+	</tr>
+	<tr>
+		<td>model-rest-json.js</td>
+		<td>Backbone.js default behavior. The application gets data through RESTFul services.</td>
+		<td><a href="https://github.com/kevinmuller1220/directory-rest-nodejs">directory-server-nodejs</a><br><br>
+		<a href="https://github.com/kevinmuller1220/directory-rest-php">directory-server-php</a><br><br>
+		directory-server-java
+		</td>
+	</tr>
+	<tr>
+		<td>model-rest-jsonp.js</td>
+		<td>If the server serving your pages and the server serving your data are on different domains, use this adapter instead to avoid the same origin policy error.</td>
+		<td><a href="https://github.com/kevinmuller1220/directory-rest-nodejs">directory-server-nodejs</a><br><br>
+		<a href="https://github.com/kevinmuller1220/directory-rest-php">directory-server-php</a><br><br>
+		directory-server-java
+		</td>
+	</tr>
+	<tr>
+		<td>model-websql.js</td>
+		<td>Uses local database using the WebSQL api.</td>
+		<td>No server required</td>
+	</tr>
+	<tr>
+		<td>model-parse-dot-com.js</td>
+		<td>Don’t want to host your own data infrastructure? Parse.com is a cloud service that will host your data for you. Use this adapter to test your app with  sample data I deployed on Parse.com.</td>
+		<td>No server required</td>
+	</tr>
+</table>
 
 The Node.js, Java, and PHP RESTful back ends work with both JSON and JSONP. If the request includes a query parameter named “callback”, a JSONP response is returned, otherwise, a regular JSON response is returned.
 
