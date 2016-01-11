@@ -28,9 +28,9 @@ I initially published the application with two implementations of a RESTful back
 
 <table>
 <tbody><tr style="font-weight:bold;">
-<td>Adapter</td>
+<td style="width: 200px">Adapter</td>
 <td>Description</td>
-<td>Back end Repo</td>
+<td style="width: 200px">Back end Repo</td>
 </tr>
 <tr>
 <td style="width:140px">model-in-memory.js</td>
